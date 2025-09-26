@@ -9,7 +9,7 @@ This is a fork of [cli-progress](https://github.com/npkgz/cli-progress) with fol
 
 [Single Bar](#single-bar-mode) | [Multi Bar](#multi-bar-mode) | [Options](#options-1) | [Examples](examples/) | [Presets](presets/) | [Events](docs/events.md)
 
-# CLI-Progress
+## CLI-Progress
 
 easy to use progress-bar for command-line/terminal applications
 

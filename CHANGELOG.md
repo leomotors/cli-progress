@@ -1,5 +1,9 @@
 # @leomotors/cli-progress
 
+## [4.0.3] - 2025-09-27
+
+- fix readme
+
 ## [4.0.2] - 2025-09-27
 
 - fix: export presets too (i forgot)
