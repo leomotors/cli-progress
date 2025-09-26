@@ -8,5 +8,5 @@ export { default as BarFormat } from "./format-bar";
 export { default as TimeFormat } from "./format-time";
 export { default as ValueFormat } from "./format-value";
 
-// Types
-export * from "./types";
+// Presets
+export { default as Preset } from "./presets";

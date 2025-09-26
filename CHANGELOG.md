@@ -1,5 +1,9 @@
 # @leomotors/cli-progress
 
+## [4.0.2] - 2025-09-27
+
+- fix: export presets too (i forgot)
+
 ## [4.0.1] - 2025-09-26
 
 - fix npm package publish

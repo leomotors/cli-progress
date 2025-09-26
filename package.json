@@ -1,6 +1,6 @@
 {
   "name": "@leomotors/cli-progress",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Forked version of cli-progress to make it ESM",
   "author": {
     "name": "Nutthapat Pongtanyavichai",

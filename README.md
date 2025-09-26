@@ -1,3 +1,12 @@
+# Fork details
+
+This is a fork of [cli-progress](https://github.com/npkgz/cli-progress) with following improvements:
+
+- Change to ESM so it works with modern JS projects (my project)
+- API should be similar to original, please use named import instead
+- Some presets name are changed (snake_case to camelCase, TypeScript should guide you)
+- Original Unit Test passed (so it probably confirm I did not break something, right?)
+
 [Single Bar](#single-bar-mode) | [Multi Bar](#multi-bar-mode) | [Options](#options-1) | [Examples](examples/) | [Presets](presets/) | [Events](docs/events.md)
 
 # CLI-Progress
@@ -7,12 +16,6 @@ easy to use progress-bar for command-line/terminal applications
 ![Demo](assets/cli-progress.gif)
 
 ![Demo](assets/presets.png)
-
-## Fork details
-
-This is a fork of [cli-progress](https://github.com/npkgz/cli-progress) with following improvements:
-
-- Change to ESM so it works with modern JS projects (my project)
 
 ## Install
 
