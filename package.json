@@ -2,6 +2,17 @@
   "name": "@leomotors/cli-progress",
   "version": "4.0.0",
   "description": "Forked version of cli-progress to make it ESM",
+  "author": {
+    "name": "Nutthapat Pongtanyavichai",
+    "url": "https://github.com/leomotors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leomotors/cli-progress"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "cli",
     "tty",
@@ -15,7 +26,6 @@
     "utility",
     "widget"
   ],
-  "repository": "https://github.com/leomotors/cli-progress",
   "scripts": {
     "test": "vitest run",
     "build": "tsup",
