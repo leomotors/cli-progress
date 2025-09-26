@@ -1,0 +1,56 @@
+name: Publish Release
+
+on:
+  push:
+    tags:
+      - "*.*"
+
+jobs:
+  github:
+    name: Publish Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Publish Release
+        uses: leomotors/release-action@v6
+        with:
+          mode: release
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          tag: ${{ github.ref_name }}
+          title: "@leomotors/cli-progress"
+
+  npm:
+    name: Publish Package
+    runs-on: ubuntu-latest
+
+    env:
+      NPM_CONFIG_PROVENANCE: true
+
+    permissions:
+      id-token: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup node with cache
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Publish Package
+        run: |
+          pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
